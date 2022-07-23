@@ -1,6 +1,41 @@
 .button {
-    width: 220px;
-    height: 220px;
-    background-image: url('@/assets/ast.jpg');
-    background-size: cover;
+    padding: $s-2 $s-10;
+    background-color: var(--color-primary-light);
+    color: var(--color-background);
+    border-radius: 32px;
+    box-shadow: 0px 8px 6px var(--color-shadow);
+    transition: all 0.3s;
+
+    &:hover {
+        box-shadow: unset;
+    }
+
+    /* Color */
+
+    &_accent {
+        background-color: var(--color-accent);
+    }
+
+    &_background {
+        background-color: var(--color-accent);
+        color: var(--color-primary-light)
+    }
+
+    /* Size */
+
+    &_big {
+        padding: $s-5 $s-20;
+    }
+
+    /* Style */
+
+    &_skeleton {
+        border: 2px solid var(--color-background);
+        background-color: transparent;
+        border-radius: 6px;
+    }
+
+    &_no-shadow {
+        box-shadow: none;
+    }
 }
