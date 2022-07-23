@@ -2,6 +2,7 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const TerserPlugin = require("terser-webpack-plugin");
 
 const isDevelopment = process.env.NODE_ENV === "development";
 const isProduction = !isDevelopment;
@@ -21,6 +22,13 @@ module.exports = {
 		alias: {
 			"@": path.resolve(__dirname, "src"),
 		},
+	},
+	optimization: {
+		splitChunks: {
+			chunks: "all",
+		},
+		minimize: isProduction,
+		minimizer: [new TerserPlugin()],
 	},
 	devtool: isDevelopment && "source-map",
 	devServer: {

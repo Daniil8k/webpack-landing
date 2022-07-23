@@ -1,4 +1,4 @@
-# Webpack-landing 💹
+# Webpack-landing
 Webpack 5 landing.
 
 ## Project clean setup
