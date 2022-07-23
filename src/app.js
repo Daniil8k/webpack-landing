@@ -1,3 +1,9 @@
-import '@/styles/main.scss'
+import "@/styles/main.scss";
 
-console.log('app');
+import("locomotive-scroll").then((locomotiveModule) => {
+	const scroll = new locomotiveModule.default({
+		el: document.querySelector('[data-scroll-container]'),
+		smooth: true,
+		smoothMobile: false,
+	});
+});
