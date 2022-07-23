@@ -1,11 +1,13 @@
 /* Vendor */
+@import './vendor/tailwind';
 @import './vendor/locomotive-scroll';
 
 /* Settings */
+@import './settings/variables';
 @import './settings/base';
-
-/* Components */
-@import './components/button';
 
 /* Elements */
 @import './elements/section';
+
+/* Components */
+@import './components/button';
