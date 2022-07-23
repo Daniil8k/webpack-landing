@@ -37,7 +37,7 @@ module.exports = {
 	},
 	plugins: [
 		new HtmlWebpackPlugin({
-			template: "./index.html",
+			template: "./index.hbs",
 			minify: { collapseWhitespace: isProduction },
 		}),
 		new CopyWebpackPlugin({
@@ -56,6 +56,14 @@ module.exports = {
 	module: {
 		rules: [
 			{
+				test: /\.hbs$/,
+				use: [
+					{
+						loader: "handlebars-loader?inlineRequires=/assets/",
+					},
+				],
+			},
+			{
 				test: /\.js$/,
 				exclude: /node_modules/,
 				use: {
@@ -67,7 +75,12 @@ module.exports = {
 			},
 			{
 				test: /\.(css|scss|sass)$/i,
-				use: [MiniCssExtractPlugin.loader, "css-loader", "postcss-loader", "sass-loader"],
+				use: [
+					MiniCssExtractPlugin.loader,
+					"css-loader",
+					"postcss-loader",
+					"sass-loader",
+				],
 			},
 			{
 				test: /\.(jpg|png|gif|svg)$/,
