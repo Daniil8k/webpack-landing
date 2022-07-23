@@ -1,0 +1,15 @@
+/* Components */
+@import './components/button';
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.button {
+    background-image: url('@/assets/ast.jpg');
+}
