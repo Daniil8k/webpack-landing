@@ -1,0 +1,25 @@
+.c-block {
+    max-width: 350px;
+    
+    &__title {
+        display: flex;
+        flex-direction: column;
+        color: var(--color-primary);
+        font-weight: bold;
+        font-size: $text-4xl;
+        line-height: 2.5rem;
+
+        &::after {
+            content: '';
+            width: 60px;
+            height: 4px;
+            border-radius: 6px;
+            background-color: var(--color-accent);
+            margin: $s-3 0;
+        }
+    }
+
+    &__text {
+        color: var(--color-secondary);
+    }
+}
