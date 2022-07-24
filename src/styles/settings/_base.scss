@@ -7,4 +7,8 @@ body {
     font-family: 'Roboto', sans-serif;
     color: var(--color-input);
     overflow-x: hidden;
+    
+    @media screen and (min-width: $lg) {
+        overflow: hidden;
+    }
 }
