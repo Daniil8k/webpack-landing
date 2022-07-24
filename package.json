@@ -2,10 +2,13 @@
   "name": "webpack-landing",
   "version": "1.0.0",
   "description": "",
+  "homepage": "https://daniil8k.github.io/webpack-landing/",
   "private": "true",
   "scripts": {
     "dev": "NODE_ENV=development webpack-dev-server --mode development --open",
-    "build": "NODE_ENV=production webpack --mode=production"
+    "build": "NODE_ENV=production webpack --mode=production",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "author": "Daniil8k",
   "license": "ISC",
@@ -16,6 +19,7 @@
     "babel-loader": "^8.2.5",
     "copy-webpack-plugin": "^11.0.0",
     "css-loader": "^6.7.1",
+    "gh-pages": "^4.0.0",
     "handlebars": "^4.7.7",
     "handlebars-loader": "^1.7.2",
     "html-loader": "^4.1.0",
