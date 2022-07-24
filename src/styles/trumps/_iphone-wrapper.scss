@@ -1,0 +1,41 @@
+@keyframes iphone-up {
+    0% {
+        transform: translate3d(100px, 500px, 10px) rotate(-31deg);
+    }
+
+    100% {
+        transform: translate3d(0px, 0px, 0px) rotate(0deg);
+    }
+}
+
+@keyframes shadow-up {
+    0% {
+        width: 0%;
+        right: 5%;
+    }
+
+    100% {
+        width: 40%;
+        right: 25%;
+    }
+}
+
+.iphone-wrapper {
+    perspective: 600px;
+    
+    animation: iphone-up 1.2s ease;
+
+    &__shadow {
+        position: absolute;
+        width: 40%;
+        height: 40%;
+        bottom: -30%;
+        right: 25%;
+        border-radius: 12px;
+        transform: rotateX(87deg) rotateZ(117deg) skewX(21deg) skewY(33deg);
+        background: linear-gradient(48deg, transparent, #aaaaaa20);
+        z-index: -10;
+
+        animation: shadow-up 1s ease;
+    }
+}
