@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @layer utilities {
-    .content-auto {
-        content-visibility: auto;
+    .perspective-600 {
+        perspective: 600px;
     }
 }
