@@ -1,4 +1,4 @@
-.button {
+.c-button {
     padding: $s-2 $s-10;
     background-color: var(--color-primary-light);
     color: var(--color-background);
@@ -33,6 +33,11 @@
         border: 2px solid var(--color-background);
         background-color: transparent;
         border-radius: 6px;
+        
+        &:hover {
+            background-color: var(--color-background);
+            color: var(--color-primary);
+        }
     }
 
     &_no-shadow {

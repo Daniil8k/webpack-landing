@@ -1,12 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    {{> partials/HeroSection }}
+    {{> partials/Header}}
+    <main data-scroll-container>
+        {{> partials/sections/HeroSection }}
+    </main>
+    <figure>
+        <svg class="absolute min-w-[20rem] max-w-[56rem] top-0 -right-[5px] -z-10" xmlns="http://www.w3.org/2000/svg"
+            width="50vw" viewBox="0 0 558 533" fill="none">
+            <path
+                d="M557.118 532.5C336.318 498.9 143.785 381.333 80.1183 327.5C34.6183 286.5 -39.8817 218.5 26.1183 0H557.118V532.5Z"
+                fill="#2B426C" />
+        </svg>
+    </figure>
 </body>
+
 </html>

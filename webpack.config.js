@@ -83,6 +83,10 @@ module.exports = {
 				],
 			},
 			{
+				test: /\.(ttf|woff|woff2)$/,
+				type: "asset/resource",
+			},
+			{
 				test: /\.(jpg|png|gif|svg)$/,
 				type: "asset/resource",
 				use: [

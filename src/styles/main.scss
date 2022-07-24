@@ -1,3 +1,6 @@
+/* ITCSS Architecture */
+/* https://www.hongkiat.com/blog/inverted-triangle-css-web-development/ */
+
 /* Vendor */
 @import './vendor/tailwind';
 @import './vendor/locomotive-scroll';
@@ -7,11 +10,15 @@
 @import './settings/theme';
 @import './settings/base';
 
-/* Elements */
-@import './elements/section';
-@import './elements/container';
-@import './elements/perspective';
+/* Objects */
+@import './objects/o-section';
+@import './objects/o-container';
 
 /* Components */
-@import './components/button';
-@import './components/iphone-shadow';
+@import './components/c-button';
+
+/* Trumps */
+@import './trumps/hero';
+@import './trumps/header';
+@import './trumps/iphone-shadow';
+@import './trumps/perspective';

@@ -29,6 +29,9 @@ module.exports = {
 			fontSize: {
 				tiny: "0.625rem",
 			},
+			height: {
+				header: "10vh"
+			}
 		},
 	},
 	plugins: [],
