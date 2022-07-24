@@ -14,7 +14,7 @@ module.exports = {
 	output: {
 		filename: "[name].[contenthash].bundle.js",
 		path: path.resolve(__dirname, "dist"),
-		clean: true,
+		clean: isProduction,
 		assetModuleFilename: "[name].[contenthash][ext]",
 	},
 	resolve: {
@@ -87,7 +87,7 @@ module.exports = {
 				type: "asset/resource",
 			},
 			{
-				test: /\.(jpg|png|gif|svg)$/,
+				test: /\.(jpg|png|gif|svg)$/i,
 				type: "asset/resource",
 				use: [
 					{

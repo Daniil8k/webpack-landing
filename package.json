@@ -4,7 +4,7 @@
   "description": "",
   "private": "true",
   "scripts": {
-    "dev": "webpack-dev-server --mode development --open",
+    "dev": "NODE_ENV=development webpack-dev-server --mode development --open",
     "build": "NODE_ENV=production webpack --mode=production"
   },
   "author": "Daniil8k",
