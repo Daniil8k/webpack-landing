@@ -1,8 +1,8 @@
 <section data-scroll-section class="o-section bg-background">
     <div class="o-container flex flex-col pt-4">
         {{> ../Stepper}}
-        <div class="flex-1 flex items-center justify-around mt-5">
-            <div class="c-block">
+        <div class="flex-1 flex flex-wrap gap-8 items-center mt-5 md:justify-around">
+            <div class="c-block" data-scroll data-scroll-speed="-1" data-scroll-position="top">
                 <h2 class="c-block__title">Let reputations do the talking</h2>
                 <p class="c-block__text">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero
@@ -10,8 +10,14 @@
                     iusto adipisci impedit excepturi rerum laborum consequuntur mollitia?
                 </p>
             </div>
-            <div>
-                {{!-- Todo: Card Item --}}
+            <div class="ml-auto relative z-10 md:ml-0">
+                <div class="c-card">
+                    {{!-- Todo: Person's card --}}
+                </div>
+                <img class="absolute bottom-[-90px] right-[-100px] opacity-30 -z-10" src="@/assets/spot-4.svg"
+                    data-scroll data-scroll-speed="3" data-scroll-position="top">
+                <img class="absolute bottom-[-130px] right-[-140px] rotate-[60deg] -z-20" src="@/assets/spot-1.svg"
+                    data-scroll data-scroll-speed="3" data-scroll-position="top">
             </div>
         </div>
     </div>
