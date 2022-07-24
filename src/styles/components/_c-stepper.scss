@@ -1,0 +1,88 @@
+$border-width: 2px;
+$border-color: var(--color-secondary-light);
+$triangle-width: 20px;
+$triangle-half: calc($triangle-width / 2);
+
+.c-stepper {
+    border-bottom: $border-width solid $border-color;
+
+    &__item {
+        min-height: 150px;
+        position: relative;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: $s-3;
+        margin-bottom: $s-8;
+        padding-right: $s-1;
+
+        &:not(:last-child) {
+            border-bottom: $border-width solid $border-color;
+
+            &::after {
+
+                content: '';
+                position: absolute;
+                width: $triangle-width;
+                height: $triangle-width;
+                border: $border-width solid $border-color;
+                border-width: $border-width $border-width 0 0;
+                background-color: var(--color-background);
+                transform: rotate(135deg);
+                bottom: -$triangle-half - $border-width;
+                right: calc(50% - $triangle-half);
+            }
+        }
+
+        &-counter {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: $s-8;
+            height: $s-8;
+            border-radius: 50%;
+            background-color: var(--color-accent);
+            color: var(--color-background);
+            font-size: $text-xs;
+            margin-top: $s-4;
+        }
+
+        &-title {
+            color: var(--color-primary);
+            font-size: $text-xl;
+            font-weight: bold;
+        }
+
+        &-text {
+            color: var(--color-secondary);
+            font-size: $text-sm;
+            margin-bottom: $s-8;
+        }
+    }
+}
+
+@media screen and (min-width: $sm) {
+    .c-stepper {
+        display: flex;
+
+        &__item {
+            align-items: flex-start;
+            text-align: left;
+            margin-bottom: unset;
+            margin-right: $s-8;
+
+            &:not(:last-child) {
+                border-bottom: unset;
+                border-right: $border-width solid $border-color;
+
+                &::after {
+                    transform: rotate(45deg);
+                    top: calc(50% - $triangle-half);
+                    right: -$triangle-half - $border-width;
+                }
+            }
+        }
+    }
+}
