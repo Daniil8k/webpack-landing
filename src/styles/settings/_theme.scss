@@ -17,3 +17,22 @@
     --color-danger: #FE290B;
     --color-shadow: rgba(59, 59, 59, 0.1);
 }
+
+.dark {
+    --color-background: #2d2d2d;
+
+    --color-primary: #b0a5fd;
+    --color-primary-light: #6e87b5;
+
+    --color-secondary: #E6E6E6;
+    --color-secondary-light: #A2A2A4;
+
+    --color-accent: #FF902D;
+    --color-accent-light: #FFF1E7;
+    
+    /* other colors */
+    --color-input: #ffffff;
+    --color-scroll-thumb: #d2d2d2;
+    --color-danger: #FE290B;
+    --color-shadow: rgba(229, 229, 229, 0.1);
+}

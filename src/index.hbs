@@ -6,6 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <script>
+        // Theme changing
+        // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+        (function () {
+            if (localStorage.theme === 'light') {
+                document.documentElement.classList.add('light');
+                return;
+            }
+
+            let isPrefersDarkMode = !('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches;
+            if (localStorage.theme === 'dark' || isPrefersDarkMode) {
+                document.documentElement.classList.add('dark');
+            }
+        })()
+    </script>
 </head>
 
 <body data-scroll-container>
@@ -20,10 +36,9 @@
     {{> partials/Footer }}
     <figure class="absolute top-0 right-0 -z-10">
         <svg width="50vw" class="min-w-[15rem] max-w-[56rem]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 558 533"
-            fill="none">
+            fill="var(--color-primary)">
             <path
-                d="M557.118 532.5C336.318 498.9 143.785 381.333 80.1183 327.5C34.6183 286.5 -39.8817 218.5 26.1183 0H557.118V532.5Z"
-                fill="#2B426C" />
+                d="M557.118 532.5C336.318 498.9 143.785 381.333 80.1183 327.5C34.6183 286.5 -39.8817 218.5 26.1183 0H557.118V532.5Z" />
         </svg>
     </figure>
 </body>
