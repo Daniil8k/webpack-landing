@@ -31,6 +31,9 @@ module.exports = {
 			},
 			height: {
 				header: "10vh"
+			},
+			screens: {
+				xs: '430px'
 			}
 		},
 	},

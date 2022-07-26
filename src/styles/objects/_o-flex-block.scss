@@ -1,0 +1,29 @@
+.o-flex-block {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: $s-8;
+
+    padding: {
+        top: $s-8;
+        bottom: $s-8;
+    }
+
+    &> :last-child {
+        margin-left: auto;
+    }
+
+    &_around {
+        @media screen and (min-width: $md) {
+            justify-content: space-around;
+        }
+
+        &> :last-child {
+            @media screen and (min-width: $md) {
+                margin-left: 0;
+            }
+        }
+    }
+}
