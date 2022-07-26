@@ -8,7 +8,9 @@
 /* Settings */
 @import './settings/variables';
 @import './settings/theme';
-@import './settings/base';
+
+/* Generic */
+@import './generic/base';
 
 /* Objects */
 @import './objects/o-section';

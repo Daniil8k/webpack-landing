@@ -22,7 +22,6 @@ $triangle-half: calc($triangle-width / 2);
             border-bottom: $border-width solid $border-color;
 
             &::after {
-
                 content: '';
                 position: absolute;
                 width: $triangle-width;
@@ -40,24 +39,21 @@ $triangle-half: calc($triangle-width / 2);
             display: flex;
             align-items: center;
             justify-content: center;
-            width: $s-8;
-            height: $s-8;
+            width: $s-10;
+            height: $s-10;
             border-radius: 50%;
             background-color: var(--color-accent);
             color: var(--color-background);
-            font-size: $text-xs;
             margin-top: $s-4;
         }
 
         &-title {
             color: var(--color-primary);
-            font-size: $text-xl;
             font-weight: bold;
         }
 
         &-text {
             color: var(--color-secondary);
-            font-size: $text-sm;
             margin-bottom: $s-8;
         }
     }
@@ -71,7 +67,7 @@ $triangle-half: calc($triangle-width / 2);
             align-items: flex-start;
             text-align: left;
             margin-bottom: unset;
-            margin-right: $s-8;
+            margin-right: $s-4;
 
             &:not(:last-child) {
                 border-bottom: unset;

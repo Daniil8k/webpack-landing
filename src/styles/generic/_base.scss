@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('@/assets/fonts/Roboto-Regular.ttf') format('truetype');
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--color-input);
+    overflow-x: hidden;
+    font-size: $text-lg;
+    line-height: 1.75rem; // 18px 
+
+    @media screen and (min-width: $lg) {
+        overflow: hidden;
+    }
+}
+
+h1 {
+    font-size: $text-6xl; // 60px
+    line-height: 1;
+    color: var(--color-primary);
+    font-weight: bold;
+}
+
+h2 {
+    font-size: $text-5xl; // 48px 
+    line-height: 1;
+    color: var(--color-primary);
+    font-weight: bold;
+}
+
+h3 {
+    font-size: $text-2xl; // 24px
+    line-height: 2rem;
+    color: var(--color-primary);
+    font-weight: bold;
+}
