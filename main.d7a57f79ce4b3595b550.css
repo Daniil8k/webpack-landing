@@ -619,10 +619,10 @@ video {
   border-radius: 48px;
 }.bg-secondary-light {
   background-color: var(--color-secondary-light);
-}.bg-primary {
-  background-color: var(--color-primary);
 }.bg-background {
   background-color: var(--color-background);
+}.bg-primary {
+  background-color: var(--color-primary);
 }.bg-secondary {
   background-color: var(--color-secondary);
 }.p-4 {
