@@ -12,7 +12,7 @@ body {
     color: var(--color-input);
     overflow-x: hidden;
     font-size: $text-lg;
-    line-height: 1.75rem; // 18px 
+    line-height: 1.75rem; // 18px
 
     @media screen and (min-width: $lg) {
         overflow: hidden;
