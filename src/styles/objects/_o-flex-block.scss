@@ -14,6 +14,9 @@
     &> :last-child {
         margin-left: auto;
     }
+    &_reverse {
+        flex-wrap: wrap-reverse;
+    }
 
     &_around {
         @media screen and (min-width: $md) {
