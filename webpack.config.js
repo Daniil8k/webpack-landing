@@ -9,7 +9,7 @@ const isProduction = !isDevelopment;
 
 module.exports = {
 	context: path.resolve(__dirname, "src"),
-	mode: "development",
+	mode: isProduction ? "production" : "development",
 	entry: "./app.js",
 	output: {
 		filename: "[name].[contenthash].bundle.js",
@@ -33,7 +33,7 @@ module.exports = {
 	devtool: isDevelopment && "source-map",
 	devServer: {
 		port: 4200,
-		hot: isProduction
+		hot: isProduction,
 	},
 	plugins: [
 		new HtmlWebpackPlugin({
@@ -59,7 +59,9 @@ module.exports = {
 				test: /\.hbs$/,
 				use: [
 					{
-						loader: "handlebars-loader?inlineRequires=/assets/",
+						loader:
+							"handlebars-loader?" +
+							JSON.stringify({ inlineRequires: "/assets/" }),
 					},
 				],
 			},
