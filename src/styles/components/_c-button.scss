@@ -1,12 +1,13 @@
 .c-button {
-    padding: $s-2 $s-10;
+    padding: $s-3 $s-10;
     background-color: var(--color-primary-light);
     color: var(--color-background);
+    font-size: $text-sm;
     border-radius: 32px;
-    box-shadow: 0px 8px 6px var(--color-shadow);
+    box-shadow: 0px 5px 6px 2px var(--color-shadow);
     transition: all 0.3s;
 
-    &:hover {
+    &:not(.c-button_no-hover):hover {
         box-shadow: unset;
     }
 
@@ -17,7 +18,7 @@
     }
 
     &_background {
-        background-color: var(--color-accent);
+        background-color: var(--color-background);
         color: var(--color-primary-light)
     }
 
@@ -33,7 +34,7 @@
         border: 2px solid var(--color-background);
         background-color: transparent;
         border-radius: 6px;
-        
+
         &:hover {
             background-color: var(--color-background);
             color: var(--color-primary);

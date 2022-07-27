@@ -1,0 +1,25 @@
+.person-card {
+    $padding: $s-4;
+    
+    &__header {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(max-content, 1fr));
+        grid-template-rows: repeat(2, minmax(max-content, 1fr));
+        gap: $s-2;
+        padding: $padding;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: $s-1;
+        padding: $padding;
+    }
+
+    &__footer {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(max-content, 1fr));
+        gap: $s-4;
+        padding: $padding;
+    }
+}
