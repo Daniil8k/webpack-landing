@@ -3,7 +3,7 @@ Webpack 5 landing.
 
 Inspired by https://dribbble.com/shots/9268265-Study-Case-study-Landing-Page-motion-Branding-for-Students.
 
-![chrome-capture-2022-6-24 (5)](https://user-images.githubusercontent.com/93822098/180664484-c3f63d42-3262-49b1-903f-2d5be5bf137f.gif)
+https://user-images.githubusercontent.com/93822098/181273668-5aacfeb1-8c30-4a7d-b617-820e68e47810.mp4
 
 ## Demo
 https://daniil8k.github.io/webpack-landing/
