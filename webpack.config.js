@@ -10,7 +10,7 @@ const isProduction = !isDevelopment;
 module.exports = {
 	context: path.resolve(__dirname, "src"),
 	mode: isProduction ? "production" : "development",
-	entry: "./app.js",
+	entry: { primary: "./primary.js", app: "./app.js" },
 	output: {
 		filename: "[name].[contenthash].bundle.js",
 		path: path.resolve(__dirname, "dist"),

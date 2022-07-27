@@ -8,21 +8,6 @@
     <title>Test - Demo Case study Landing Page motion & Branding for Students</title>
     <meta name="description"
         content="Demo Landing Page. Webpack 5, SCSS, handlebars, framework free. Branding for Students designed by Aurélien Salomon">
-    <script>
-        // Theme changing
-        // On page load or when changing themes, best to add inline in `head` to avoid FOUC
-        (function () {
-            if (localStorage.theme === 'light') {
-                document.documentElement.classList.add('light');
-                return;
-            }
-
-            let isPrefersDarkMode = !('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches;
-            if (localStorage.theme === 'dark' || isPrefersDarkMode) {
-                document.documentElement.classList.add('dark');
-            }
-        })()
-    </script>
 </head>
 
 <body data-scroll-container>
