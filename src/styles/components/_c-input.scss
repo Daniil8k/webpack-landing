@@ -1,0 +1,9 @@
+.c-input {
+    background: transparent;
+    outline: none;
+    border-bottom: 1px solid var(--color-secondary-light);
+    
+    &:focus {
+        border-color: var(--color-primary);
+    }
+}

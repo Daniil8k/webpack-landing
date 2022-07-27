@@ -1,0 +1,32 @@
+<div class="c-card p-4" data-scroll data-scroll-speed="0.5" data-scroll-position="top">
+    <form class="flex flex-col" method="POST" action="https://yoomoney.ru/quickpay/confirm.xml" target="_blank">
+        <div class="flex flex-col gap-1 mb-4">
+            <label class="text-sm text-primary-light" for="formcomment">Your name</label>
+            <input class="c-input" placeholder="Robert Anderson" id="formcomment" name="formcomment" type="text" required />
+        </div>
+        <div class="mb-8">
+            <span class="text-sm text-primary-light">Choose Amount</span>
+            <div class="flex gap-2">
+                <div class="c-radio">
+                    <input type="radio" id="amount-20" name="sum" data-type="number" value="500">
+                    <label for="amount-20">$5</label>
+                </div>
+                <div class="c-radio">
+                    <input type="radio" id="amount-50" name="sum" data-type="number" value="1500" checked>
+                    <label for="amount-50">$15</label>
+                </div>
+                <div class="c-radio">
+                    <input type="radio" id="amount-100" name="sum" data-type="number" value="2500">
+                    <label for="amount-100">$25</label>
+                </div>
+            </div>
+        </div>
+        <input type="hidden" name="receiver" value="410017078951970">
+        <input type="hidden" name="short-dest" value="">
+        <input type="hidden" name="label" value="$order_id">
+        <input type="hidden" name="quickpay-form" value="donate">
+        <input type="hidden" name="targets" value="транзакция {order_id}">
+        <input type="hidden" name="paymentType" value="AC">
+        <button class="mx-auto c-button c-button_accent c-button_medium" type="submit">SUBMIT</button>
+    </form>
+</div>
