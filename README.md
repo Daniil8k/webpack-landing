@@ -1,5 +1,5 @@
 # Webpack-landing
-Webpack 5 landing.
+Webpack 5, SCSS landing.
 
 Inspired by https://dribbble.com/shots/9268265-Study-Case-study-Landing-Page-motion-Branding-for-Students.
 
