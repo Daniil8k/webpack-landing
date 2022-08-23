@@ -8,9 +8,9 @@ Inspired by https://dribbble.com/shots/9268265-Study-Case-study-Landing-Page-mot
 ## Demo
 https://daniil8k.github.io/webpack-landing/
 
-## Project clean setup
+## Project setup
 ```
-npm ci
+npm i
 ```
 
 ### Compiles and hot-reloads for development
